@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    src: url("/Font/Poppins-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "WhitneyLight";
+    src: url("/Font/Whitney/whitney-light.otf");
+  }
+
+  @font-face {
+    font-family: "WhitneyMedium";
+    src: url("/Font/Whitney/whitney-medium.otf");
+  }
+
+  @font-face {
+    font-family: "WhitneySemiBold";
+    src: url("/Font/Whitney/whitney-semibold.otf");
+  }
+
+  @font-face {
+    font-family: "WhitneyBold";
+    src: url("/Font/Whitney/whitney-bold.otf");
+  }
+
+  * {
+    padding: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  .sidebar-container {
+    @apply bg-glass h-[96%] w-[20rem] rounded-3xl ml-6 p-4 border transition-all duration-500 border-solid border-glass relative;
+  }
+  .sidebar {
+    @apply flex items-center mt-2 p-4 rounded-lg cursor-pointer hover:bg-white transition-all duration-300;
+  }
+}
