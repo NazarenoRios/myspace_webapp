@@ -29,7 +29,8 @@
     "@assets/*": ["public/assets/*"],
     "@fonts/*": ["public/Font/*"],
     "@components/*": ["src/components/*"],
-    "@utils/*": ["src/utils/*"]
+    "@utils/*": ["src/utils/*"],
+    "@redux/*": ["./src/redux/reducers/*"]
   },
   "include": [
     "next-env.d.ts",

@@ -1,10 +1,17 @@
 import React from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Home from "../../modules/Home/Home";
+import { useSelector } from "react-redux";
 
 const HomePage = () => {
+  const { darkBackground } = useSelector((state) => state.sidebar);
+
   return (
-    <div className='className="w-full h-screen bg-main bg-cover object-cover flex items-center"'>
+    <div
+      className={`w-full h-screen bg-cover object-cover flex items-center ${
+        darkBackground ? "bg-mainDark" : "bg-main"
+      }`}
+    >
       <Sidebar />
       <Home />
     </div>
