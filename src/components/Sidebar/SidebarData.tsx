@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { datas } from "./Data";
+import { useSelector } from "react-redux";
 
-const SidebarData = ({ toggle }: any) => {
+const SidebarData = () => {
+  const { openTable } = useSelector((state: any) => state.sidebar);
+
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
 
   const handleOptionClick = (index: number) => {
@@ -14,7 +17,7 @@ const SidebarData = ({ toggle }: any) => {
         return (
           <div
             className={`${
-              toggle ? "last:w-[3.6rem]" : "last:w-[17rem]"
+              openTable ? "last:w-[3.6rem]" : "last:w-[17rem] "
             } sidebar last:absolute left-4 bottom-4`}
             key={data.id}
             onClick={() => handleOptionClick(index)}
@@ -25,10 +28,10 @@ const SidebarData = ({ toggle }: any) => {
             <div className="mr-8 text-[1.7rem] text-brown">{data.icon}</div>
             <div
               className={`${
-                toggle ? "opacity-0 delay-200" : ""
+                openTable ? "" : "opacity-0 delay-200"
               } text-[1rem] text-brown whitespace-pre`}
             >
-              {data.text}
+              <span>{data.text}</span>
             </div>
           </div>
         );
