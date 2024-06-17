@@ -23,7 +23,7 @@ const Home = () => {
         contribute, you can click on the following{" "}
         <a
           className="font-WhitneyLight text-darkyellow hover:text-darkyellowhover"
-          href="https://www.youtube.com/playlist?list=PLMJPaCcJTig8BsVcTSpINZwGg4Hw0-3Vc"
+          href="https://www.youtube.com/playlist?list=PLMJPaCcJTig_TjsmsORmeCuZ0m3du2Vpr"
           rel="noreferrer"
           target="_blank"
         >

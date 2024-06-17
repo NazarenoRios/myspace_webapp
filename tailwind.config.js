@@ -15,7 +15,7 @@ module.exports = {
       backgroundImage: {
         main: "url('/assets/background7.jpg')",
         mainDark: "url('/assets/background8.jpg')",
-        login: "url('/assets/bgLogin.jpg')",
+        login: "url('/assets/background4.jpg')",
       },
       fontFamily: {
         WhitneyLight: ["WhitneyLight", "sans-serif"],
