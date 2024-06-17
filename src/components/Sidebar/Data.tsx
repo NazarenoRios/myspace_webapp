@@ -1,47 +1,57 @@
 import { FiUser, FiLogOut } from "react-icons/fi";
-import { AiOutlineMessage, AiOutlineLock, AiOutlineCalendar } from "react-icons/ai";
+import {
+  AiOutlineMessage,
+  AiOutlineLock,
+  AiOutlineCalendar,
+} from "react-icons/ai";
 import { BsBook } from "react-icons/bs";
-import { BiCameraMovie } from "react-icons/bi"
-import { CiMusicNote1 } from "react-icons/ci"
+import { BiCameraMovie } from "react-icons/bi";
+import { CiMusicNote1 } from "react-icons/ci";
+import { RiHome2Line } from "react-icons/ri";
 
 export const datas = [
   {
     id: 1,
+    icon: <RiHome2Line />,
+    text: "Home",
+  },
+  {
+    id: 2,
     icon: <FiUser />,
     text: "Profile",
   },
   {
-    id: 2,
+    id: 3,
     icon: <AiOutlineMessage />,
     text: "Messages",
   },
   {
-    id: 3,
+    id: 4,
     icon: <AiOutlineCalendar />,
     text: "Calendar",
   },
   {
-    id: 4,
+    id: 5,
     icon: <BsBook />,
     text: "Notes",
   },
   {
-    id: 5,
+    id: 6,
     icon: <BiCameraMovie />,
     text: "Movies / Series",
   },
   {
-    id: 6,
+    id: 7,
     icon: <CiMusicNote1 />,
     text: "Music converter",
   },
   {
-    id: 7,
+    id: 8,
     icon: <AiOutlineLock />,
     text: "Secret",
   },
   {
-    id: 8,
+    id: 9,
     icon: <FiLogOut />,
     text: "Logout",
   },
